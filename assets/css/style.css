@@ -1,0 +1,58 @@
+body{
+	  background: rgba(233, 234, 237, 0.51);
+}
+header .navbar-default{
+	  background: #d9534f;
+}
+header .navbar-default .navbar-nav>li>a{
+	color: #fff;
+}
+header .navbar-default .navbar-nav>.active>a, header .navbar-default .navbar-nav>.active>a:focus, header .navbar-default .navbar-nav>.active>a:hover{
+	  background: #fff;
+}
+.menu .jumbotron {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-left: 3px solid #000;
+  padding: 20px;
+}
+.menu .jumbotron .col-lg-8{
+  border-right-style: dotted;
+  border-color: rgb(0, 0, 0);
+}
+.menu .jumbotron .col-lg-4{
+  text-align: center;
+}
+.menu .jumbotron .col-lg-4 button{
+  padding: 7px 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 64px;
+}
+.menu .jumbotron img{
+	  width: 140px;
+}
+footer .navbar-default{
+	background: #d9534f;
+}
+footer .navbar-nav{
+	float: none !important;
+	margin: 0 auto;
+}
+footer ul{
+  margin: 0 auto;
+  width: 300px;
+}
+footer ul li {
+  width: 100px;
+}
+footer ul li a{
+  text-align: center;
+}
+footer .navbar-default .navbar-nav>li>a{
+	color: #fff;
+}
+footer .navbar-default .navbar-nav>.active>a, header .navbar-default .navbar-nav>.active>a:focus, header .navbar-default .navbar-nav>.active>a:hover{
+	  background: #fff;
+}
