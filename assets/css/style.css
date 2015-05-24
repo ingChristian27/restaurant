@@ -14,11 +14,19 @@ header .navbar-default .navbar-nav>.active>a, header .navbar-default .navbar-nav
   background: #fff;
   border: 1px solid #ccc;
   border-left: 3px solid #000;
-  padding: 20px;
+  padding: 10px;
 }
 .menu .jumbotron .col-lg-8{
   border-right-style: dotted;
-  border-color: rgb(0, 0, 0);
+  border-color: rgb(90, 85, 85);
+  border-width: 2px;
+}
+.menu .jumbotron .col-lg-4 button:hover {
+  background: rgb(105, 199, 90);
+  color: #Fff;
+}
+.menu .jumbotron .col-lg-8 .badge{
+	float: right;
 }
 .menu .jumbotron .col-lg-4{
   text-align: center;
@@ -28,7 +36,7 @@ header .navbar-default .navbar-nav>.active>a, header .navbar-default .navbar-nav
   width: 100%;
   text-align: center;
   font-size: 14px;
-  margin-top: 64px;
+  margin-top: 30px;
 }
 .menu .jumbotron img{
 	  width: 140px;
