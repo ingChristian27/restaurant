@@ -6,7 +6,6 @@
 	<!--<meta name="keywords" content="HTML5">-->
 	<title>Carta</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js" ></script>
-	<script src="app/app.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
 	
@@ -15,12 +14,15 @@
 
 
 <menu-top></menu-top>	
-<div class="page-header">
+
+<menu-prueba></menu-prueba>
 
 <div class="container">
 	<div class="col-lg-8">
-	<div class="row menu">
-		<div class="jumbotron">
+	<div ng-controller=" menuController as producto" class="row menu">
+
+		<div ng-repeat="producto in producto.productos.almuerzos " class="jumbotron">
+
 			  <div class="media">
 				  <div class="media-left">
 				    <a href="#">
@@ -30,10 +32,10 @@
 				  <div class="media-body">
 				  <div class="row">
 				  	<div class="col-lg-8">
-				  		 <h4 class="media-heading">Media heading</h4>
-				    <h6>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </h6>
+				  		 <h4 class="media-heading">{{producto.nombre}}</h4>
+				    <h6> {{producto.Descripcion}}</h6>
 				    <span class="label label-danger">Agotado</span>
-				    <span class="badge">14.000</span>
+				    <span class="badge">{{producto.precio}}</span>
 				  	</div>
 				  	<div class="col-lg-4">
 				  		
@@ -47,195 +49,7 @@
 				  </div>
 			</div>
 		</div>
-				<div class="jumbotron">
-			  <div class="media">
-				  <div class="media-left">
-				    <a href="#">
-				      <img class="media-object" src="assets/img/plato1.jpg" alt="...">
-				    </a>
-				  </div>
-				  <div class="media-body">
-				  <div class="row">
-				  	<div class="col-lg-8">
-				  		 <h4 class="media-heading">Media heading</h4>
-				    <h6>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </h6>
-				    <span class="label label-danger">Agotado</span>
-				    <span class="badge">14.000</span>
-				  	</div>
-				  	<div class="col-lg-4">
-				  		
-				  		<button type="button" class="btn btn-default btn-sm">
-						  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Star
-						</button>
 
-				  	</div>
-				  </div>
-				   	
-				  </div>
-			</div>
-		</div>
-				<div class="jumbotron">
-			  <div class="media">
-				  <div class="media-left">
-				    <a href="#">
-				      <img class="media-object" src="assets/img/plato1.jpg" alt="...">
-				    </a>
-				  </div>
-				  <div class="media-body">
-				  <div class="row">
-				  	<div class="col-lg-8">
-				  		 <h4 class="media-heading">Media heading</h4>
-				    <h6>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </h6>
-				    <span class="label label-danger">Agotado</span>
-				    <span class="badge">14.000</span>
-				  	</div>
-				  	<div class="col-lg-4">
-				  		
-				  		<button type="button" class="btn btn-default btn-sm">
-						  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Star
-						</button>
-
-				  	</div>
-				  </div>
-				   	
-				  </div>
-			</div>
-		</div>
-				<div class="jumbotron">
-			  <div class="media">
-				  <div class="media-left">
-				    <a href="#">
-				      <img class="media-object" src="assets/img/plato1.jpg" alt="...">
-				    </a>
-				  </div>
-				  <div class="media-body">
-				  <div class="row">
-				  	<div class="col-lg-8">
-				  		 <h4 class="media-heading">Media heading</h4>
-				    <h6>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </h6>
-				    <span class="label label-danger">Agotado</span>
-				    <span class="badge">14.000</span>
-				  	</div>
-				  	<div class="col-lg-4">
-				  		
-				  		<button type="button" class="btn btn-default btn-sm">
-						  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Star
-						</button>
-
-				  	</div>
-				  </div>
-				   	
-				  </div>
-			</div>
-		</div>
-				<div class="jumbotron">
-			  <div class="media">
-				  <div class="media-left">
-				    <a href="#">
-				      <img class="media-object" src="assets/img/plato1.jpg" alt="...">
-				    </a>
-				  </div>
-				  <div class="media-body">
-				  <div class="row">
-				  	<div class="col-lg-8">
-				  		 <h4 class="media-heading">Media heading</h4>
-				    <h6>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </h6>
-				    <span class="label label-danger">Agotado</span>
-				    <span class="badge">14.000</span>
-				  	</div>
-				  	<div class="col-lg-4">
-				  		
-				  		<button type="button" class="btn btn-default btn-sm">
-						  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Star
-						</button>
-
-				  	</div>
-				  </div>
-				   	
-				  </div>
-			</div>
-		</div>
-				<div class="jumbotron">
-			  <div class="media">
-				  <div class="media-left">
-				    <a href="#">
-				      <img class="media-object" src="assets/img/plato1.jpg" alt="...">
-				    </a>
-				  </div>
-				  <div class="media-body">
-				  <div class="row">
-				  	<div class="col-lg-8">
-				  		 <h4 class="media-heading">Media heading</h4>
-				    <h6>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </h6>
-				    <span class="label label-danger">Agotado</span>
-				    <span class="badge">14.000</span>
-				  	</div>
-				  	<div class="col-lg-4">
-				  		
-				  		<button type="button" class="btn btn-default btn-sm">
-						  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Star
-						</button>
-
-				  	</div>
-				  </div>
-				   	
-				  </div>
-			</div>
-		</div>
-				<div class="jumbotron">
-			  <div class="media">
-				  <div class="media-left">
-				    <a href="#">
-				      <img class="media-object" src="assets/img/plato1.jpg" alt="...">
-				    </a>
-				  </div>
-				  <div class="media-body">
-				  <div class="row">
-				  	<div class="col-lg-8">
-				  		 <h4 class="media-heading">Media heading</h4>
-				    <h6>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </h6>
-				    <span class="label label-danger">Agotado</span>
-				    <span class="badge">14.000</span>
-				  	</div>
-				  	<div class="col-lg-4">
-				  		
-				  		<button type="button" class="btn btn-default btn-sm">
-						  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Star
-						</button>
-
-				  	</div>
-				  </div>
-				   	
-				  </div>
-			</div>
-		</div>
-				<div class="jumbotron">
-			  <div class="media">
-				  <div class="media-left">
-				    <a href="#">
-				      <img class="media-object" src="assets/img/plato1.jpg" alt="...">
-				    </a>
-				  </div>
-				  <div class="media-body">
-				  <div class="row">
-				  	<div class="col-lg-8">
-				  		 <h4 class="media-heading">Media heading</h4>
-				    <h6>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </h6>
-				    <span class="label label-danger">Agotado</span>
-				    <span class="badge">14.000</span>
-				  	</div>
-				  	<div class="col-lg-4">
-				  		
-				  		<button type="button" class="btn btn-default btn-sm">
-						  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Star
-						</button>
-
-				  	</div>
-				  </div>
-				   	
-				  </div>
-			</div>
-		</div>
 	</div>
 
 
@@ -278,7 +92,10 @@
 		</div>
 	</div>
 </div>
-</div>
+
 <pie-pagina></pie-pagina>
+<script src="app/app.js"></script>
+<script src="app/controllers/controllers.js"></script> 
+<script src="app/directivas/directivas.js"></script> 
 </body>
 </html>
