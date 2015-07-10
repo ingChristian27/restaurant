@@ -1,0 +1,102 @@
+{
+    "categoria": [
+        {
+            "id": "001",
+            "nombre": "bebida",
+            "producto": [
+                {
+                    "nombre": "Coca cola",
+                    "Descripcion": "gaseosa helada",
+                    "preferencias": [
+                        {
+                            "Descripcion": "Coca cola mini",
+                            "precio": 1000
+                        },
+                        {
+                            "Descripcion": "Coca cola mediana",
+                            "precio": 2000
+                        },
+                        {
+                            "Descripcion": "Coca cola familiar",
+                            "precio": 3500
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Limonada de coco",
+                    "Descripcion": "limonada con zumo de coco",
+                    "preferencias": [
+                        {
+                            "Descripcion": "Limonada personal",
+                            "precio": 2500
+                        },
+                        {
+                            "Descripcion": "Jarra de limonada",
+                            "precio": 8000
+                        }
+                    ]
+                },
+                {
+                    "nombre": "CLub Colombia",
+                    "Descripcion": "cerveza club colombia",
+                    "preferencias": [
+                        {
+                            "Descripcion": "Club Colombia Dorada",
+                            "precio": 2000
+                        },
+                        {
+                            "Descripcion": "Club Colombia Roja",
+                            "precio": 2000
+                        },
+                        {
+                            "Descripcion": "Club Colombia negra",
+                            "precio": 2500
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "002",
+            "nombre": "Almuerzo",
+            "producto": [
+                {
+                    "nombre": "Menu del día",
+                    "Descripcion": "pescado, arroz con coco y patacon",
+                    "precio": 12000
+                },
+                {
+                    "nombre": "bandeja paisa",
+                    "Descripcion": "arroz, frijo, chicharron, patacon",
+                    "precio": 15200
+                },
+                {
+                    "nombre": "ajiaco",
+                    "Descripcion": "SOpa bogotana",
+                    "precio": 8000
+                }
+            ]
+        },
+        {
+            "id": "003",
+            "nombre": "Addiciones",
+            "producto": [
+                {
+                    "nombre": "Porción de papas a la francesa",
+                    "Descripcion": "Porción de papas a la francesa",
+                    "precio": 3000
+                },
+                {
+                    "nombre": "Postre",
+                    "Descripcion": "Deliciosos postre de chocolate",
+                    "precio": 4000
+                },
+                {
+                    "nombre": "Gelatina",
+                    "Descripcion": "Deliciosa gelatina de colores",
+                    "precio": 2500
+                }
+            ]
+        }
+    ]
+}
